@@ -1,2 +1,3 @@
 # platformer_with_brackeys
-Platformere built in Godot, following a tutorial by Brackeys
+Platformer built in Godot, following a [tutorial by Brackeys](https://youtu.be/LOhfqjmasi0?si=mY3pEPV5ailYH4Kc)
+
