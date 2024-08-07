@@ -46,7 +46,7 @@ jobs:
 
       # Export the Godot project
       - name: Export Godot Project
-        run: godot --export-release Web 'exports/index.html'
+        run: godot --headless --export-release Web 'exports/index.html'
 
       - name: Temporary verify godot export
         run: ls exports
