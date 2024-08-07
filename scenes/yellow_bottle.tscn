@@ -249,6 +249,5 @@ bus = &"SFX"
 libraries = {
 "": SubResource("AnimationLibrary_5mor1")
 }
-blend_times = [&"hover", &"hover", 1450.0]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da17h45dai1my"
-path="res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+uid="uid://c2padkmltfwvr"
+path="res://.godot/imported/knight-icon.svg-a4ce624d2bbba13b1967e8350306b186.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.svg"
-dest_files=["res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"]
+source_file="res://knight-icon.svg"
+dest_files=["res://.godot/imported/knight-icon.svg-a4ce624d2bbba13b1967e8350306b186.ctex"]
 
 [params]
 
