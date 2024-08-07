@@ -43,3 +43,11 @@ jobs:
     
       - name: 🔬 Verify Butler Setup
         run: butler -V
+
+      # Export the Godot project
+      - name: Export Godot Project
+        run: godot --export-release Web 'exports/index.html'
+
+      - name: Temporary verify godot export
+        run: ls exports
+        
