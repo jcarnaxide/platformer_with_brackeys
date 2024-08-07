@@ -14,7 +14,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  build-and-deploy:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -23,7 +23,18 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - name: install godot
+      # Installs Godot on runner
+      - uses: chickensoft-games/setup-godot@v2.1.1
+        name: 🤖 Setup Godot
+        with:
+          # Version must include major, minor, and patch, and be >= 4.0.0
+          version: 4.2.2-stable
+          # Use .NET-enabled version of Godot (the default is also true).
+          use-dotnet: false
+          # Include the Godot Export Templates (the default is false).
+          include-templates: true
+
+      - name: 🔬 Verify Setup
         run: |
-          sudo apt-get update
-          sudo apt-get install godot
+          dotnet --version
+          godot --version
