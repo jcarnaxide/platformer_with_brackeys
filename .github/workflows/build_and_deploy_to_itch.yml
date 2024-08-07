@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
 
       # Installs Godot on runner
-      - uses: chickensoft-games/setup-godot@v2.1.1
+      - uses: chickensoft-games/setup-godot@v2
         name: 🤖 Setup Godot
         with:
           # Version must include major, minor, and patch, and be >= 4.0.0
@@ -34,7 +34,12 @@ jobs:
           # Include the Godot Export Templates (the default is false).
           include-templates: true
 
-      - name: 🔬 Verify Setup
-        run: |
-          dotnet --version
-          godot --version
+      - name: 🔬 Verify Godot Setup
+        run: godot --version
+
+      # Installs Butler
+      - name: Set up butler
+        uses: jdno/setup-butler@v1
+    
+      - name: 🔬 Verify Butler Setup
+        run: butler -V
