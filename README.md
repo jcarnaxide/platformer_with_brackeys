@@ -4,5 +4,9 @@ Platformer built in Godot, following a [tutorial by Brackeys](https://youtu.be/L
 # Try it out!
 <a href="https://jcarnaxide.itch.io/platformer-with-brackeys" rel="itch.io web player">![Play](assets/other_images/embed.png)</a>
 
+# Github Actions
+A Github action to build and deploy the latest version of the game to Itch.io is in place
+Whenever a new commit is pushed to the main branch, this action is triggered.
+
 # Attributions
 <a href="https://www.vecteezy.com/free-vector/knight">Knight Vectors by Vecteezy</a>
