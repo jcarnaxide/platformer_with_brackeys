@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cj6ym453hmwyw"]
+[gd_scene load_steps=18 format=3 uid="uid://cj6ym453hmwyw"]
 
 [ext_resource type="PackedScene" uid="uid://b0kafc2j3ryp1" path="res://scenes/player.tscn" id="1_fp506"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_jb6j0"]
@@ -10,6 +10,7 @@
 [ext_resource type="FontFile" uid="uid://byao5wy058a8m" path="res://assets/fonts/PixelOperator8.ttf" id="7_h310m"]
 [ext_resource type="FontFile" uid="uid://dxj4tije4sbbv" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="9_uxals"]
 [ext_resource type="PackedScene" uid="uid://cc0kdliy575iq" path="res://scenes/yellow_bottle.tscn" id="10_xvgso"]
+[ext_resource type="PackedScene" uid="uid://cn54gmrsc2eq6" path="res://scenes/mobile_buttons.tscn" id="11_i1xbl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_710y7"]
 texture = ExtResource("2_syivc")
@@ -629,3 +630,5 @@ position = Vector2(152.5, 28.8108)
 
 [node name="yellow_bottle2" parent="." instance=ExtResource("10_xvgso")]
 position = Vector2(224.058, -85.3243)
+
+[node name="MobileButtons" parent="." instance=ExtResource("11_i1xbl")]
