@@ -9,7 +9,6 @@ env:
   PROJECT_PATH: '.'
   ITCH_USERNAME: jcarnaxide
   ITCH_GAME_ID: platformer-with-brackeys
-  BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
 
 jobs:
   export-web:
@@ -37,10 +36,10 @@ jobs:
     #       name: web
     #       path: build/web
       - name: Deploy to Itch.io 🚀
-        uses: KikimoraGames/itch-publish@v0.0.3
-        with:
-            butlerApiKey: ${BUTLER_API_KEY}
-            gameData: ./build/web/
-            itchUsername: $ITCH_USERNAME
-            itchGameId: $ITCH_GAME_ID
-            buildChannel: html5
+        uses: manleydev/butler-publish-itchio-action@master
+        env:
+            BUTLER_CREDENTIALS: ${{ secrets.BUTLER_API_KEY }}
+            CHANNEL: html5
+            ITCH_GAME: platformer-with-brackeys
+            ITCH_USER: jcarnaxide
+            PACKAGE: build/web
