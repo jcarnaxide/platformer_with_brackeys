@@ -6,7 +6,7 @@ on:
 env:
   GODOT_VERSION: 4.2.2
   EXPORT_NAME: Web
-  PROJECT_PATH: platformer_with_brackeys
+  PROJECT_PATH: '.'
   ITCH_USERNAME: jcarnaxide
   ITCH_GAME_ID: platformer-with-brackeys
 
