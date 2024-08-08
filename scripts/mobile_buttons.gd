@@ -1,8 +1,8 @@
 extends CanvasLayer
 
-#func _ready():
-	#if not OS.get_name() in ["android", "iOS"]:
-		#queue_free()
+func _ready():
+	if not OS.get_name() in ["android", "iOS"]:
+		queue_free()
 
 func _on_left_pressed():
 	Input.action_press("move_left")
